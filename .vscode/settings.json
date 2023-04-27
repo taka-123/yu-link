@@ -1,0 +1,51 @@
+{
+  // 保存時に自動的にフォーマットを適用する
+  "editor.formatOnSave": true,
+
+  // デフォルトフォーマッターとしてPrettierを使用する
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // php-cs-fixerの実行可能ファイルのパスを指定する
+  "php-cs-fixer.executablePath": "${workspaceRoot}/vendor/bin/php-cs-fixer",
+
+  // php-cs-fixerにPSR-12ルールを適用する
+  "php-cs-fixer.rules": "@PSR12",
+
+  // ESLintを保存時に自動的に実行・修正する
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // ESLintの設定
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Prettierの設定
+  "prettier.requireConfig": true,
+  "prettier.configPath": ".prettierrc",
+
+  // 各言語の設定
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  }
+}
