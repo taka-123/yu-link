@@ -1,0 +1,9 @@
+{
+  "indent_style": "space",
+  "indent_size": 2,
+  "wrap_line_length": 80,
+  "wrap_attributes": "auto",
+  "end_with_newline": true,
+  "tags_sort": false,
+  "class_sort": false
+}
