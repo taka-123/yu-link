@@ -8,9 +8,6 @@
   // php-cs-fixerの実行可能ファイルのパスを指定する
   "php-cs-fixer.executablePath": "${workspaceRoot}/vendor/bin/php-cs-fixer",
 
-  // php-cs-fixerにPSR-12ルールを適用する
-  "php-cs-fixer.rules": "@PSR12",
-
   // ESLintを保存時に自動的に実行・修正する
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
@@ -46,6 +43,10 @@
     "editor.tabSize": 2
   },
   "[json]": {
+    "editor.tabSize": 2
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
     "editor.tabSize": 2
   }
 }
