@@ -4,4 +4,6 @@ includes:
 parameters:
     paths:
         - app/
+    excludePaths:
+        - vendor/**
     level: 5
