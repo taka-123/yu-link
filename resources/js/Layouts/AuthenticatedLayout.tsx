@@ -33,6 +33,9 @@ export default function Authenticated({
                 >
                   管理画面
                 </NavLink>
+                <NavLink href={route('blog')} active={route().current('blog')}>
+                  ブログ
+                </NavLink>
               </div>
             </div>
 
@@ -129,6 +132,12 @@ export default function Authenticated({
               active={route().current('dashboard')}
             >
               管理画面
+            </ResponsiveNavLink>
+            <ResponsiveNavLink
+              href={route('blog')}
+              active={route().current('blog')}
+            >
+              ブログ
             </ResponsiveNavLink>
           </div>
 
