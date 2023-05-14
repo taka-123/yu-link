@@ -40,4 +40,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('/blog/{post}', [BlogController::class, 'show'])->name('blog.show');
+});
+
 require __DIR__.'/auth.php';
