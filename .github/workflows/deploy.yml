@@ -19,6 +19,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSHKEY }}
+        ssh_known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
         script: |
           cd /var/www/yu-link
           git fetch origin deploy
