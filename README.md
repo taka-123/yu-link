@@ -1,1 +1,1 @@
-### GitHub Actions を使って、ConoHaに自動デプロイします（テスト）
+### GitHub Actions を使って、ConoHaに自動デプロイします
