@@ -30,7 +30,7 @@ jobs:
           cd /var/www/yu-link
           git fetch origin deploy
           git reset --hard origin/deploy
-          sudo chown -R tf:tf .
+          sudo chown -R ${{ secrets.USERNAME }}:${{ secrets.USERNAME }} .
           sudo chown -R www-data:www-data ./storage
           sudo chown -R www-data:www-data ./bootstrap/cache
           composer install --optimize-autoloader --no-dev
