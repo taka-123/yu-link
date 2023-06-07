@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Test SSH connection
-      run: ssh -T -o StrictHostKeyChecking=accept-new ${{ secrets.USERNAME }}@${{ secrets.HOST }}
-
     - name: Checkout code
       uses: actions/checkout@v2
 
