@@ -60,7 +60,7 @@ export default function DeleteUserForm({
         </p>
       </header>
 
-      <DangerButton onClick={confirmUserDeletion}>Delete Account</DangerButton>
+      <DangerButton onClick={confirmUserDeletion}>アカウントを削除</DangerButton>
 
       <Modal show={confirmingUserDeletion} onClose={closeModal}>
         <form onSubmit={deleteUser} className="p-6">
