@@ -16,7 +16,9 @@ jobs:
     - name: Accept SSH host key
       run: |
         mkdir -p ~/.ssh
+        chmod 700 ~/.ssh
         ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+        chmod 600 ~/.ssh/known_hosts
       
     - name: Execute remote commands
       uses: appleboy/ssh-action@master
